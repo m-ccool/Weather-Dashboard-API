@@ -99,4 +99,10 @@ label {
     margin: .5rem;
 }
 
+.card-header {
+    color: white;
+    font-family: 900;
+    background-color: rgb(150, 153, 160);
+}
+
 

@@ -39,16 +39,19 @@
                     <div class="card">
                         <h2 class="card-header" City Search></h2>
                         <div class="card-body">
-                          <p class="card-text">Bootstrap, Node.js powered Web API that allows you to view your local weather!<br>
-                            <iconify-icon icon="logos:bootstrap"></iconify-icon>
+                          <p class="card-text">Bootstrap, Moment.js, Node.js powered Web API that allows you to view your local weather!<br> 
+                            <br>                         
                             <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+                            <iconify-icon icon="logos:momentjs"></iconify-icon>
+                            <iconify-icon icon="logos:bootstrap"></iconify-icon>
                             <iconify-icon icon="logos:html-5"></iconify-icon>
-                            <iconify-icon icon="logos:css-3"></iconify-icon></p>
+                            <iconify-icon icon="logos:css-3"></iconify-icon>
+                          </p>
                         </div>
 
                         <!-- city input & search feild -->
 
-                        <form>
+                        <form id="searchForm">
                             <div class="col-auto d-inline-flex ">
                                 <label for="inputCity">Enter City</label>
                                 <input type="city" class="form-control" id="inputCity" placeholder="City">
@@ -61,14 +64,15 @@
 
                     <!-- search history card -->
 
-                    <div class="card placeholder-glow">
+                    <div id="searchHistory" class="card placeholder-glow">
                         <div class="card-body" id="history"></div>
                         <div class="card-footer">
                             <p class="card-text">Search History</p>
+                            <button id="clearHistoryBtn" type="button" class="btn btn-secondary">Delete History <iconify-icon icon="twemoji:recycling-symbol"></iconify-icon></button>
                         </div>
                       </div>
                 </div>
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-8" id="results-container">
 
                     <!-- local weather now output card -->
 
@@ -80,7 +84,7 @@
                             <span id="icon"></span>
                           </h5>
                         </div>
-                        <div class="card-body" id="current-status">
+                        <div class="card-body" id="currentStatus">
                           <p class="card-text">Temperature: <span id="temperature"></span></p>
                           <p class="card-text">Humidity: <span id="humidity"></span></p>
                           <p class="card-text">Wind Speed: <span id="wind"></span></p>
@@ -93,11 +97,11 @@
 
                       <!-- 5 day forecast output card -->
 
-                      <div class="card text-center">
+                      <div class="card text-center" id="forecast-container">
                         <div class="card-header">
-                          <h4>5-Dday Forecast</h4>
+                          <h3 class="card-title">5-Day Forecast</h3>
                         </div>
-                        <div class="row card-body" id="forecast-status"></div>
+                        <div class="row card-body" id="forecast-body"></div>
                       </div>
 
 
@@ -119,7 +123,7 @@
     <!-- scripts -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
