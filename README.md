@@ -5,7 +5,7 @@ Server-side weather dashboard API
 This web applbication uses HTML, CSS, powered by JQuery & Moment.js library for date & time handling.
 
 ## DEPLOYED APPLICATION LINK!
-**[🖥️ Deployed Application 🖱️](https://m-ccool.github.io/)**
+**[🖥️ Deployed Application 🖱️](https://m-ccool.github.io/Weather-Dashboard-API/)**
 
 
 
