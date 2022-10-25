@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scrollbar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="scripts" href="./assets/js/scripts.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- navbr title  -->
+
+    <nav class="navbar">
+        <div class="container-fluid justify-content-center align-items-center">
+          <a class="navbar-brand" href="#">
+            <h1><iconify-icon icon="twemoji:sun-behind-small-cloud"height="40" width="40"></iconify-icon>
+            Weather Dashboard</h1>
+          </a>
+        </div>
+    </nav>
+
+    <main>        
+          <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <h2 class="card-header" City Search></h2>
+                        <div class="card-body">
+                          <p class="card-text">Bootstrap, Node.js powered Web API that allows you to view your local weather!<br>
+                            <iconify-icon icon="logos:bootstrap"></iconify-icon>
+                            <iconify-icon icon="logos:nodejs-icon"></iconify-icon>
+                            <iconify-icon icon="logos:html-5"></iconify-icon>
+                            <iconify-icon icon="logos:css-3"></iconify-icon></p>
+                        </div>
+
+                        <!-- city input & search feild -->
+
+                        <form>
+                            <div class="col-auto d-inline-flex ">
+                                <label for="inputCity">Enter City</label>
+                                <input type="city" class="form-control" id="inputCity" placeholder="City">
+                                <div class="col-2">
+                                    <button type="submit" class="btn" id="searchBtn"><iconify-icon icon="twemoji:magnifying-glass-tilted-left" height="30" width="30"></iconify-icon></button>
+                                  </div>
+                            </div>
+                        </form>                        
+                    </div>
+
+                    <!-- search history card -->
+
+                    <div class="card placeholder-glow">
+                        <div class="card-body" id="history"></div>
+                        <div class="card-footer">
+                            <p class="card-text">Search History</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-8">
+
+                    <!-- local weather now output card -->
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                          <h5>
+                            <span id="name"></span>
+                            <span id="date"></span>
+                            <span id="icon"></span>
+                          </h5>
+                        </div>
+                        <div class="card-body" id="current-status">
+                          <p class="card-text">Temperature: <span id="temperature"></span></p>
+                          <p class="card-text">Humidity: <span id="humidity"></span></p>
+                          <p class="card-text">Wind Speed: <span id="wind"></span></p>
+                          <p class="card-text">UV Index: <span id="uv"></span> <span class="alert" id="uv-alert"></span></p>
+                        </div>
+                        <div class="card-footer text-muted">
+                           
+                        </div>
+                      </div>
+
+                      <!-- 5 day forecast output card -->
+
+                      <div class="card text-center">
+                        <div class="card-header">
+                          <h4>5-Dday Forecast</h4>
+                        </div>
+                        <div class="row card-body" id="forecast-status"></div>
+                      </div>
+
+
+                </div>
+              </div>
+          </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <nav class="navbar fixed-bottom bg-light">
+            <div class="container-fluid justify-content-center align-items-center">
+              <a class="font-gradient" href="#">created by b mccool @m-ccool on github 🐉</a>
+            </div>
+        </nav>    
+    </footer>
+
+    <!-- scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --rainbow-gradient: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+    --soft-shadow: box-shadow: 0px 9px 20px 4px rgba(130,130,130,0.5);
+}
+
+
+html, body {
+    min-width: 100%;
+    background: white;
+    color: black;
+    transition: pos;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+}
+
+footer, nav, navbar {
+    display: block;
+}
+
+footer {
+    border-radius: ;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+    ;
+  }
+
+main {
+    margin: 0 calc(1.5rem + 2.5vw);
+    transition: margin 650ms ease;
+    display: flex!important;
+    align-items: center!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+}
+
+div {
+    transition: all 650ms ease;
+  }
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+input {
+    margin: 1rem;
+}
+
+label { 
+    padding: .5rem;
+}
+
+.font-gradient {
+    background-size: 250% 250%!important;
+    animation: gradient 5s ease infinite;
+    background: var(--rainbow-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* navbar */
+
+.navbar {    
+    transition: all 950ms ease;
+    color: white;
+    border-radius: --bs-border-radius;
+    background-color: rgb(54, 56, 58);
+}
+
+.navbar-brand {
+    transition: all 950ms ease;
+    color: white;
+}
+
+/* main */
+
+
+.card  {
+    margin: .5rem;
+}
+
+

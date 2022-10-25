@@ -1,0 +1,23 @@
+{
+  "name": "weather-dashboard-api",
+  "version": "1.0.0",
+  "description": "web api weather dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ccool/Weather-Dashboard-API.git"
+  },
+  "author": "b mccool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-ccool/Weather-Dashboard-API/issues"
+  },
+  "homepage": "https://github.com/m-ccool/Weather-Dashboard-API#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "moment": "^2.29.4"
+  }
+}
